@@ -151,6 +151,14 @@ heightForRowAtIndexPath:(NSIndexPath*)indexPath
 	return size.height + 1;
 }
 
+
+- (CGFloat)tableView:(UITableView *)tableView
+	   estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	return UITableViewAutomaticDimension;
+}
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
